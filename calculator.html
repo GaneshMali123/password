@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1{
+            text-align: center;
+            background-color: rgb(232, 240, 240);
+            margin: auto;
+            width: 300px;
+        }
+        input{
+            background: none;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            color: rgb(223, 5, 5);
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <div class="a1">
+        ENTER FIRST NUMBER <input type="number" id="t1"><br>
+        ENTER SECOND NUMBER <input type="number" id="t2"><br><br>
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="-" onclick="sub()">
+        <input type="button" value="*" onclick="mul()">
+        <input type="button" value="/" onclick="div()">
+        <p id="ans">
+            ans
+        </p>
+    </div>
+    <script>
+        function add() {
+            var num1, num2, num3;
+            num1 = Number(document.getElementById("t1").value);
+            num2 = Number(document.getElementById("t2").value);
+            num3 = num1 + num2;
+            document.getElementById("ans").innerHTML = "addition is " + num3;
+        }
+        function sub() {
+    
+            var num1, num2, num3;
+            num1 = Number(document.getElementById("t1").value);
+            num2 = Number(document.getElementById("t2").value);
+            num3 = num1 - num2;
+            document.getElementById("ans").innerHTML = "substraction is " + num3;
+        }
+        function mul() {
+            var num1, num2, num3;
+            num1 = Number(document.getElementById("t1").value);
+            num2 = Number(document.getElementById("t2").value);
+            num3 = num1 * num2;
+            document.getElementById("ans").innerHTML = "multiplication " + num3;
+        }
+        function  div() {
+            var num1, num2, num3;
+            num1 = Number(document.getElementById("t1").value);
+            num2 = Number(document.getElementById("t2").value);
+            num3 = num1 / num2;
+            document.getElementById("ans").innerHTML = "division is " + num3;
+        }
+    
+        </script>
+</body>
+</html>
